@@ -1,0 +1,19 @@
+cassandra_keyspace: 'tickers_db'
+kafka_server: '127.0.0.1:9092'
+kafka_topic: 'tickers'
+historic_start_date: '2022-01-01 00:00:00'
+process_in_real_time: false
+api_debug_mode: false
+indexes:
+  - 'dow_jones'
+  - 'sp_500'
+  - 'nasdaq_100'
+date_format: '%Y-%m-%d %H:%M:%S'
+nasdaq_100_urls:
+  - 'https://www.dividendmax.com/market-index-constituents/nasdaq-100'
+  - 'https://www.dividendmax.com/market-index-constituents/nasdaq-100?page=2'
+  - 'https://www.dividendmax.com/market-index-constituents/nasdaq-100?page=3'
+dow_jones_urls:
+  - 'https://www.dogsofthedow.com/dow-jones-industrial-average-companies.htm'
+sp_500_urls:
+  - 'https://www.slickcharts.com/sp500'

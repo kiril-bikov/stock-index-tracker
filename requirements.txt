@@ -1,0 +1,7 @@
+cassandra_driver==3.29.0
+Flask==3.0.1
+kafka==1.3.5
+pandas==2.2.0
+PyYAML==6.0.1
+yfinance==0.2.36
+beautifulsoup4==4.12.3

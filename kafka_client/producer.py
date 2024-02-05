@@ -33,7 +33,7 @@ async def download_index_data(process_in_real_time=False, start_date=historic_st
 		date_now = datetime.now()
 		date_now = date_now.strftime(date_format)
 		if process_in_real_time:
-			start_date = ticker.last_updated
+			start_date = ticker.last_updated.strftime(date_format)
 
 		ticker_data = download_ticker_data(ticker.ticker_id, ticker.company, start_date, date_now)
 
